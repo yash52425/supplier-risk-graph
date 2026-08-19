@@ -50,9 +50,28 @@ Open `http://localhost:3000`. Without `.env`, the dashboard runs with the same r
 
 The browser is intentionally dependency-free. A small Node HTTP service owns connection configuration, uses the official `neo4j-driver` over Bolt, and exposes read-only JSON endpoints. If CognoDB is unreachable, each API response returns a clear `503` and the UI shows an actionable error rather than failing silently. `scripts/seed.js` loads idempotent Cypher from `data/seed.cypher`.
 
+
 ## Submission checklist
 
-- [ ] Add a current dashboard screenshot to this README after running against the live instance.
-- [ ] Deploy to a free Node-compatible host and add the hosted URL here.
-- [ ] Record a 1-2 minute walkthrough: open the dashboard, explain a two-hop risk path, and explain an alternate supplier.
-- [ ] Create a private GitHub repository, grant Wexa access if needed, and email the URL to `hr@wexa.ai`.
+- [x] Dashboard screenshots added.
+- [x] Application deployed.
+- [x] Screen recording walkthrough.
+- [x] GitHub repository prepared for submission.
+
+## Screenshots
+
+### Live Dashboard
+
+![Live Dashboard](dashboard.png)
+
+### Supplier Risk Graph
+
+![Supplier Risk Graph](risk-graph.png)
+
+## Live Demo
+
+https://supplier-risk-graph.onrender.com/
+
+## Screen Recording
+
+[Watch the 1–2 minute walkthrough](https://drive.google.com/file/d/1-ReOTyQ1yTP_V9Yq6gSuM0lnklNNVQML/view?usp=sharing)
